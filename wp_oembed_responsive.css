@@ -1,0 +1,15 @@
+.oembed-container {
+  position: relative;
+  max-width: 100%;
+  height: 0; 
+  overflow: hidden;
+}
+.oembed-container iframe,
+.oembed-container object,
+.oembed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}";
