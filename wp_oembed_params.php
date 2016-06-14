@@ -1,6 +1,6 @@
 <?php
 
-function wp_oembed_params_filter($html, $url, $attr, $post_ID) {
+function wp_oembed_params_filter($html, $url, $attr, $post_ID = null) {
   if (isset($attr['params'])) {
     $matched = preg_match("/iframe[^>]*src\s*=\s*[\"']([^\"']*)/", $html, $src_match, PREG_OFFSET_CAPTURE);
     if ($matched) {
