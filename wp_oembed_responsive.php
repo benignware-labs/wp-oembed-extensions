@@ -45,7 +45,7 @@ function wp_oembed_responsive_dataparse( $return, $data, $url ) {
 add_filter('oembed_dataparse', 'wp_oembed_responsive_dataparse', 10, 3);
 */
 
-function wp_oembed_responsive_oembed_filter($html, $url, $attr, $post_ID) {
+function wp_oembed_responsive_oembed_filter($html, $url, $attr, $post_ID = null) {
   //echo "<textarea>$html</textarea>";
   $iframe_atts_matches = array();
   $iframe_match = preg_match_all('/<iframe[^>]*>/Ui', $html, $iframe_atts_matches);
