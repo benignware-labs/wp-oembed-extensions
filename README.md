@@ -8,6 +8,9 @@ wp-oembed-extensions
 * Custom Embed Params
 
 
+## OEmbed Responsive
+
+Makes any iframe embedded via OEmbed responsive by calculating the ratio from width and height attributes of the iframe and applies the appriopriate css. No Javascript needed and works out of the box with most providers.
 
 ## OEmbed Widget
 
@@ -15,13 +18,9 @@ The OEmbed Widget lets you add an OEmbed-URL to your sidebars.
 It takes an option `oembed` which is passed as attributes to the `oembed_html`-filter.
 Adds a provider-based css class for custom styling.
 
-## OEmbed Responsive
-
-Makes any iframe embedded via OEmbed responsive.
-
 ## OEmbed Params
 
-This hook lets theme developers pass url-params to the generated iframe-src with certain providers.
+This hook lets theme developers pass api-params to the generated iframe-url.
 
 #### Example: Don't show info with youtube-videos in OEmbed widgets
 
