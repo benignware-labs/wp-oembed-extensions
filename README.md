@@ -16,7 +16,7 @@ Makes any iframe embedded via OEmbed responsive by calculating the ratio from wi
 
 The OEmbed Widget lets you add an OEmbed-URL to your sidebars.
 It takes an option `oembed` which is passed as attributes to the `oembed_html`-filter.
-Adds a provider-based css class for custom styling.
+Adds a provider-based css class that allows for custom styling.
 
 ## OEmbed Params
 
