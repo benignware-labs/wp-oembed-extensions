@@ -3,8 +3,8 @@ wp-oembed-extensions
 
 > Wordpress OEmbed Extension Pack (Beta)
 
-* OEmbed Widget
 * Responsive iframes
+* OEmbed Widget
 * Custom Embed Params
 
 
