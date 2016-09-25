@@ -66,11 +66,11 @@ function wp_oembed_responsive_oembed_filter($html, $url, $attr, $post_ID = null)
     
     if (count($size) == 2) {
       $ratio = $size[1] / $size[0];
-      $container_html.= ' style="
-        max-width: ' . $size[0] . 'px;
-        max-height: ' . $size[1] . 'px;
-        padding-bottom: ' . ($ratio * 100) . '%;
-      "';
+      $container_html.= ' style="';
+      $container_html.= 'padding-bottom: ' . ($ratio * 100) . '%; ';
+      $container_html.= 'max-width: ' . $size[0] . 'px; ';
+      $container_html.= 'max-height: ' . $size[1] . 'px; ';
+      $container_html.= '"';
     }
     $container_html.= ">";
     $container_html.= $html;
