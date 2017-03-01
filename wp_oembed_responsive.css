@@ -1,8 +1,12 @@
 .oembed-container {
   position: relative;
+}
+.oembed-container .oembed-wrapper {
+  position: relative;
   max-width: 100%;
-  height: 0; 
+  height: 0;
   overflow: hidden;
+  margin-bottom: 1rem;
 }
 .oembed-container iframe,
 .oembed-container object,
@@ -12,4 +16,4 @@
   left: 0;
   width: 100%;
   height: 100%;
-}";
+}
